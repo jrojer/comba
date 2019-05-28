@@ -1,7 +1,15 @@
 #include "factorial.h"
 #include <iostream>
+#include <gtest/gtest.h>
 
-int main()
+TEST(comba,Factorial)
 {
-    printf("%s\n", comba::Factorial(5) == 120 ? "OK" : "FAILED");
+    ASSERT_TRUE(comba::Factorial(5) == 120);
+}
+
+int main(int argc, char* argv[])
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    RUN_ALL_TESTS();
+    return 0;
 }
