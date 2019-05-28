@@ -1,4 +1,5 @@
-#include <comba/factorial.h>
+#include "factorial.h"
+#include <iostream>
 
 int main()
 {
